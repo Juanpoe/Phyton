@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediccion</title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+  </head>
+  <body>
+    <h1>Predicción</h1>
+
+	<form action="/predict" method="POST">
+	  <label for="dato1">Edad:</label>
+	  <input type="number" name="Edad" id="Edad">
+
+	  <label for="dato2">Tiene Hipertension :</label>
+	  <select name="Hipertension" id="Hipertension">
+		<option value="n">Seleccione una Opcion</option>
+		<option value="1">Si</option>
+		<option value="0">No</option>
+	 </select>
+	
+	 <label for="dato2">Tiene Diabetes : </label>
+	 <select name="Diabetes" id="Diabetes">
+		<option value="n">Seleccione una Opcion</option>
+	   <option value="1">Si</option>
+	   <option value="0">No</option>
+	</select>
+	<br>
+	  <input type="submit" value="Predeccir ">
+	</form>
+  </body>
+</html>
